@@ -90,7 +90,7 @@ st.markdown(
     .header {
         text-align: center;
         background-color: #004080; /* New dark blue background color */
-        color: white;
+        color: rgb(256,256,256);
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -169,4 +169,5 @@ if result_to_display is not None:
     st.dataframe(result_to_display.style.set_properties(**{'text-align': 'left'}).set_table_styles(
         [dict(selector='th', props=[('text-align', 'left')])]
     ), use_container_width=True)
+
 
